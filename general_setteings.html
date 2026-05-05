@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>eStock - General Settings Docs</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    .container {
+      max-width: 1000px;
+    }
+
+    section {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .table th {
+      background-color: #f1f3f5;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .alert {
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+   
+<div class="container my-2">
+     <header id="header" class="sticky-top bg-white">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/img/favicon-48x48.png"
+              alt="iDocs Template" /> </a>
+          
+          <!-- Logo End -->
+
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="general_setteings.html">Settings</a></li>
+            </ul>
+          </div>
+          <!-- <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+            <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/"
+                target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/"
+                target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/"
+                target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+          </ul> -->
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+
+
+  <!-- Title -->
+  <section>
+    <h2>General Settings</h2>
+    <p>
+      The General Settings module is used to configure system-wide options such as currency, stores,
+      financial settings, and operational preferences.
+    </p>
+  </section>
+
+  <!-- Endpoint -->
+  <section>
+    <h3>Endpoint</h3>
+    <div class="alert alert-info">
+      <strong>POST</strong> /settings/general/store
+    </div>
+  </section>
+
+  <!-- Request -->
+  <section>
+    <h3>Request Parameters</h3>
+
+    <img src="assets/img/photo_2026-04-30_14-36-50.jpg" alt="form">
+
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>title</td><td>string</td><td>Yes</td><td>Application name</td></tr>
+          <tr><td>timezone</td><td>string</td><td>No</td><td>System timezone</td></tr>
+          <tr><td>currency_id</td><td>integer</td><td>No</td><td>Currency ID</td></tr>
+          <tr><td>currency_precision</td><td>integer</td><td>No</td><td>Decimal places</td></tr>
+          <tr><td>currency_symbol_placement</td><td>string</td><td>No</td><td>before / after</td></tr>
+          <tr><td>default_purchase_store_id</td><td>integer</td><td>No</td><td>Purchase store</td></tr>
+          <tr><td>default_sales_store_id</td><td>integer</td><td>No</td><td>Sales store</td></tr>
+          <tr><td>allow_expired_products</td><td>boolean</td><td>No</td><td>Allow expired products</td></tr>
+          <tr><td>prevent_expired_sales</td><td>boolean</td><td>No</td><td>Prevent expired sales</td></tr>
+          <tr><td>expiry_date_warning_enabled</td><td>boolean</td><td>No</td><td>Expiry warning</td></tr>
+          <tr><td>return_days_limit</td><td>integer</td><td>No</td><td>Return days</td></tr>
+          <tr><td>show_payment_summary_on_save</td><td>boolean</td><td>No</td><td>Show payment summary</td></tr>
+          <tr><td>cash_supply_account_id</td><td>integer</td><td>No</td><td>Supply account</td></tr>
+          <tr><td>cash_expense_account_id</td><td>integer</td><td>No</td><td>Expense account</td></tr>
+          <tr><td>incoming_cheques_account_id</td><td>integer</td><td>No</td><td>Cheques account</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Example -->
+  <section>
+    <h3>Example Request</h3>
+<pre><code>{
+  "title": "eStock",
+  "timezone": "Africa/Cairo",
+  "currency_id": 1,
+  "currency_precision": 2,
+  "currency_symbol_placement": "before",
+  "default_purchase_store_id": 1,
+  "default_sales_store_id": 1,
+  "allow_expired_products": true,
+  "prevent_expired_sales": true,
+  "expiry_date_warning_enabled": true,
+  "return_days_limit": 7,
+  "show_payment_summary_on_save": true,
+  "cash_supply_account_id": 1,
+  "cash_expense_account_id": 2,
+  "incoming_cheques_account_id": 3
+}</code></pre>
+  </section>
+
+  <!-- Notes -->
+  <section>
+    <h3>Notes</h3>
+    <ul>
+      <li>Settings are global.</li>
+      <li>Only one record exists.</li>
+      <li>Checkbox values handled automatically.</li>
+    </ul>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+  <p>eStock Documentation © 2026</p>
+</footer>
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
