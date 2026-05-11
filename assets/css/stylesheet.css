@@ -3625,3 +3625,367 @@ p {
   border-radius: 8px;
   border: 1px solid #ddd;
 }
+/* Payment Method Management Documentation Styles */
+/* These styles ensure consistency with the main index page */
+
+.idocs-content {
+    padding: 40px 0;
+    margin: 5px;
+    background: #f8f9fa;
+}
+
+.idocs-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+}
+
+.idocs-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.idocs-subtitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.idocs-subsubtitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.idocs-divider {
+    height: 4px;
+    background: linear-gradient(90deg, #4299e1, #3182ce, #2b6cb0);
+    border-radius: 2px;
+    margin-bottom: 30px;
+    width: 80px;
+}
+
+.lead {
+    font-size: 1.125rem;
+    color: #4a5568;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Feature Cards */
+.idocs-feature-card {
+    height: 100%;
+    padding: 30px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.idocs-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(66, 153, 225, 0.15);
+    border-color: #4299e1;
+}
+
+.idocs-feature-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(66, 153, 225, 0.3);
+}
+
+.idocs-feature-card h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 12px;
+}
+
+/* Workflow */
+.idocs-workflow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid #4299e1;
+}
+
+.idocs-workflow-step {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.idocs-workflow-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 30px;
+    height: 2px;
+    background: #cbd5e0;
+    z-index: -1;
+}
+
+.idocs-workflow-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 15px rgba(66, 153, 225, 0.3);
+}
+
+.idocs-workflow-step.active .idocs-workflow-number {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+}
+
+.idocs-workflow-step h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.idocs-workflow-step p {
+    color: #718096;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Screenshot Placeholder */
+.idocs-screenshot-placeholder {
+    border: 2px dashed #cbd5e0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.idocs-screenshot-placeholder:hover {
+    border-color: #4299e1;
+    background: #f7fafc;
+}
+
+/* Alerts */
+.idocs-alert {
+    padding: 20px 24px;
+    border-radius: 10px;
+    border-left: 4px solid;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+
+.idocs-alert i {
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.idocs-alert-info {
+    background: #ebf8ff;
+    border-color: #4299e1;
+    color: #2c5282;
+}
+
+.idocs-alert-warning {
+    background: #fffaf0;
+    border-color: #ed8936;
+    color: #c05621;
+}
+
+.idocs-alert-danger {
+    background: #fed7d7;
+    border-color: #f56565;
+    color: #c53030;
+}
+
+/* Validation Table */
+.idocs-validation-table .table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.idocs-validation-table th {
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 15px 20px;
+}
+
+.idocs-validation-table td {
+    padding: 15px 20px;
+    vertical-align: middle;
+    border-color: #e2e8f0;
+}
+
+.idocs-validation-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* Lists */
+.idocs-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.idocs-list li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #4a5568;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.idocs-list li:last-child {
+    border-bottom: none;
+}
+
+.idocs-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: #48bb78;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Note Cards */
+.idocs-note-card {
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    border: 1px solid;
+    height: 100%;
+}
+
+.idocs-note-card i {
+    font-size: 1.5rem;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.idocs-note-card h6 {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.idocs-note-card p {
+    margin: 0;
+    color: #718096;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.idocs-note-info {
+    background: #ebf8ff;
+    border-color: #bee3f8;
+}
+
+.idocs-note-info i {
+    color: #4299e1;
+}
+
+.idocs-note-warning {
+    background: #fffaf0;
+    border-color: #fcd34d;
+}
+
+.idocs-note-warning i {
+    color: #ed8936;
+}
+
+.idocs-note-success {
+    background: #f0fff4;
+    border-color: #9ae6b4;
+}
+
+.idocs-note-success i {
+    color: #48bb78;
+}
+
+.idocs-note-danger {
+    background: #fed7d7;
+    border-color: #fc8181;
+}
+
+.idocs-note-danger i {
+    color: #f56565;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .idocs-section {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .idocs-title {
+        font-size: 2rem;
+    }
+    
+    .idocs-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .idocs-workflow {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .idocs-workflow-step:not(:last-child)::after {
+        display: none;
+    }
+    
+    .idocs-note-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .idocs-section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+    
+    .idocs-feature-card:hover {
+        transform: none;
+    }
+}
